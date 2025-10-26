@@ -26,11 +26,12 @@ if __name__ == "__main__":
     john = book.find("John")
     john.edit_phone("1234567890", "1112223333")
 
-    print(john)  # Виведення: Contact name: John, phones: 1112223333; 5555555555
+    assert str(john) == "Contact name: John, phones: 1112223333; 5555555555"
 
     # Пошук конкретного телефону у записі John
     found_phone = john.find_phone("5555555555")
-    print(f"{john.name}: {found_phone}")  # Виведення: 5555555555
+    assert f"{john.name}: {found_phone}" == "John: 5555555555"
 
     # Видалення запису Jane
     book.delete("Jane")
+    assert book.find("Jane") == None
