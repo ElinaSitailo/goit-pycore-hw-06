@@ -1,6 +1,7 @@
 from .Name import Name
 from .Phone import Phone
 
+
 class Record:
     def __init__(self, name):
         self.name = Name(name)

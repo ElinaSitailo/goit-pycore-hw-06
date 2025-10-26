@@ -1,5 +1,4 @@
-
-from models.AddressBook import AddressBook 
+from models.AddressBook import AddressBook
 from models.Record import Record
 
 

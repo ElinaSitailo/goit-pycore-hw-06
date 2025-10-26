@@ -1,7 +1,7 @@
-
 from .Field import Field
 
 MIN_PHONE_LEN = 10
+
 
 class Phone(Field):
     def __init__(self, value):
